@@ -1,0 +1,75 @@
+
+
+#header {
+	background-image:url(sea3.jpg);
+  padding: 10px; background-size: cover; 
+  background-attachment: fixed; background-position: center top;
+  text-align: left;
+
+}
+ /*https://images.unsplash.com/photo-1569768737382-a9fb4365d481?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60*/
+/*.shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+
+#header h1, p  {color: white;}
+
+.container p{color: black;}
+
+img{box-sizing: border-box; width: 100%; }
+
+.blk{background-color: #230619;}
+
+h3{color: #230619;}
+h5{color: #230619;}
+
+.bluk{
+/*background-image:url(https://images.unsplash.com/photo-1569768737382-a9fb4365d481?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+background-size: cover;*/
+background-color: black;}
+
+#home {color:#0b8e7d; }
+.s a {color: white;}
+
+#next{width: 100%;}
+
+.break { text-align: center;}
+#footer p {color: white;}
+#footer {text-align: center; padding:10px;margin-bottom: -50px ;  
+ }
+
+.carousel-item img { margin: auto; /*height: 250px; width: auto;*/opacity: 0.35; }
+
+.container a {color: #0b8e7d;}
+.container a:hover {color: #230619;}
+
+.carousel-item a {color:white; }
+.carousel-item a:hover {color:#0b8e7d; }
+.bd-example {margin-top: 0;} 
+
+#header{margin-bottom: 0;}
+
+#headingOne{ /*background-image:url(https://images.unsplash.com/photo-1569768737382-a9fb4365d481?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+background-size: cover;*/background-color:#230619; 
+
+}
+#headingTwo{/*background-image:url(https://images.unsplash.com/photo-1569768737382-a9fb4365d481?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+background-size: cover;*/background-color:#230619;  }
+#headingThree{/*background-image:url(https://images.unsplash.com/photo-1569768737382-a9fb4365d481?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+background-size: cover;*/background-color:#230619; }
+
+#One {color: white; }
+#One:hover {color: #0b8e7d;}
+
+#Two {color: white;}
+#Two:hover {color: #0b8e7d;}
+#Three {color: white;}
+#Three:hover {color: #0b8e7d;}
+
+
+

@@ -1,0 +1,33 @@
+.blk {background-color: #230619;}
+.bluk {color:#230619;}
+.blu {color: black;}
+
+#team {color:#0b8e7d;}
+
+.v {color:#0b8e7d;}
+.v:hover {color:#230619;}
+
+.s a {color: white;}
+#but {background-color: #0b8e7d;}
+
+.buk {color: white;}
+
+#header {
+	background-image:url(sea3.jpg);
+  padding: 10px; background-size: cover; 
+  background-attachment: fixed; background-position: center top;
+  text-align: left;
+
+}
+
+#header h1, p  {color: white;}
+
+h1{color: #230619;}
+
+.in img{ width: 80%; box-sizing: border-box; }
+.in p {color: black;}
+.ann {-webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); margin-bottom: 10px;}
+  #footer p {color: white;}
+#footer {text-align: center; padding:10px;}
+

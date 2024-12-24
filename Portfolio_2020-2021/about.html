@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> About</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<body>
+<style type="text/css">
+
+  body {background-color: #FCF8E3;
+        margin: 0;
+      font-family: 'Manrope', sans-serif;}
+
+/* BACKGROUND STUFF */
+
+  #snowFlakeContainer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: pink;
+    
+    user-select: none;  /* This element cannot be selected by the user! */
+    z-index: 1000; /* Higher z-index means the element is in front of the others. */
+    pointer-events: none; /*Nothing happens to the cursor when u move over */
+    border-radius:0% 100% 0% 60% ; /* rounds the edges of stuff */
+    width: 13px;
+    height: 13px;
+    
+  }
+
+/* NaviGATİON STUFF*/
+ 
+
+    /* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #66BF97;
+  overflow: hidden;
+  z-index: 2000;
+  text-align: center;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color:  #FCF8E3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 10px;
+  border-radius: 10%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #5AA885;
+ 
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  text-shadow: 0px 0px 5px #FCF8E3;
+ font-weight: bolder;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+
+}
+ 
+ /* Content Stuff */ 
+
+ .content {
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+
+  z-index: 2000;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 2px 2px 6px 1px gray;
+
+ } 
+
+ .header {
+  background-color: #ffe6ea;
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px;
+  margin-bottom: 10px;
+
+
+}
+
+.header p  {
+  color: gray;
+  font-size: 15px;
+}
+
+/* Table stuff */
+
+#table_holder {
+  margin: 6%;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+#table_holder p , #table_holder li {
+  color: #666666;
+}
+
+/* Button effects */
+
+button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color:#cccccc;
+  text-shadow: 0px 0px 5px gray;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-top: 10px;
+  margin-bottom:0px;
+  box-shadow: 1px 1px 1px 0px gray;
+  border-radius: 15px;
+  width: 50%;
+  height: 20%;
+}
+
+button:hover {
+  opacity: 0.5;
+  color: black;
+}
+
+button:focus {
+outline:none;
+opacity: 0.5;
+color: black;
+}
+
+
+textarea {
+  width: 90%;
+   outline: none;
+  resize: none;
+  overflow: auto;
+  border-radius: 15px;
+  border-color: #bfbfbf;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 700px) {
+  .topnav a { font-size: 23px; }
+  .topnav a:not(.active) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+
+   .formContent label {
+  font-size: 10px;  
+ }
+ 
+ .content{width: 80%;}
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+</style>
+
+<div class="topnav" id="myTopnav">
+  
+  <a href="nav.html" >Home</a>
+  <a href="Logs.html" >Logs</a>
+  <a href="result.html" >Entries</a>
+  <a href="about.html" class="active">About</a>
+  
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+
+  </div>
+  <div id="snowFlakeContainer">
+    <span class="snowflake"></span>
+  </div>
+<!-- End of the background-->
+
+<div class="content">
+  <div class="header">
+    <h1> About Mindful Logs</h1>
+    <p> </p>
+  </div>
+
+  <div id="table_holder">
+    <p> Mindful Logs is a collection of wide range of journalling activies to present some tools for personal growth mindfulness, self love and acceptance. All of these activies had been gathered from different sources such as self-help books, online podcasts, and others... </p>
+
+    <p> It includes various exercises to help you with: </p>
+    <ul>
+      <li> Coping and handling stressfull situations</li>
+      <li> Understanding and knowing yourself</li>
+      <li> Being more grateful for your life and the ones in it </li>
+      <li> Being more conscious of your environment and your role in it</li>
+      <li> And more..</li>
+    </ul>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+<script >
+  
+  var snowflakes = []; // Array to store the snowflake objects
+
+  var browserWidth; 
+  var browserHeight; // Variables to store the browser dimensions
+
+  var numberOfSnowflakes = 60; 
+
+  var resetPosition = false; // Flag to reset the position of the snowflakes
+
+  //handle accesibility
+  var enableAnimations =false;
+  var reduceMotionQuery = matchMedia("(prefers-reduced-motion)"); // checks if the user wants to reduce motion
+    
+    //Handle animation accesibility preferences
+  function setAccessibilityState() {
+    if(reduceMotionQuery.matches){
+      enableAnimations= false;
+    }
+    else {
+      enableAnimations = true;
+    }
+  
+  }
+
+  setAccessibilityState();
+
+  reduceMotionQuery.addListener(setAccessibilityState);
+
+  // It all starts up in here
+
+  function setup(){
+    if(enableAnimations){
+      window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
+      window.addEventListener("resize",setResetFlag, false);
+    }
+  }
+
+  setup();
+
+  // constructor for our snowflake object...
+
+  function Snowflake(element, speed, xPos, yPos, degree) {
+    //set initial snowflake properties
+    this.element = element;
+    this.speed= speed;
+    this.xPos=xPos;
+    this.yPos= yPos;
+    this.scale=1;
+
+    // declare the variables used for snowflakes motion
+
+    this.counter =0;
+    this.sign = Math.random() < 0.5 ? 1 : -1;
+
+    // setting an initial opacity and size for our snowflake
+      this.element.style.opacity = (.1 + Math.random()) + 0.5;
+
+      this.element.style.transform='rotate('+degree+' deg)';
+  }
+
+
+  // The function responsible for actually moving our snowflake
+
+  Snowflake.prototype.update = function() {
+
+   // using some trigonometry to determine our x and y position
+  this.counter += this.speed / 6000;
+    this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+    this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+    this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
+
+     // setting our snowflake's position
+    setTransform(Math.round(this.xPos), Math.round(this.yPos), this.scale, this.element);
+
+    // if snowflake goes below the browser window, move it back to the top
+    if (this.yPos > browserHeight) {
+      this.yPos = -50;
+    }
+
+  }
+
+
+  // A performant way to set your snowflake's position and size
+
+  function setTransform(xPos, yPos, scale , el) {
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale}) rotate(${xPos}deg)`;
+  }
+
+
+  // Function for creating the snowflakes
+
+  function generateSnowflakes(){
+
+    // get our snowflake from the DOM and store it
+    var originalSnowflake = document.querySelector(".snowflake");
+
+    // Access the element's parent container
+    var snowflakeContainer = originalSnowflake.parentNode;
+    snowflakeContainer.style.display= "block";
+
+    // get our browser's size
+    browserWidth = document.documentElement.clientWidth;
+    browserHeight = document.documentElement.clientHeight;
+
+    // create each individual snowflake
+
+    for (var i=0; i<numberOfSnowflakes; i++){
+
+      // clone our original snowflake and add it to snowflake container
+      var snowflakeClone= originalSnowflake.cloneNode(true);
+      snowflakeContainer.appendChild(snowflakeClone);
+
+      // set our snowflake's initial position and related properties
+      var initialXPos = getPosition(50, browserWidth);
+          var initialYPos = getPosition(50, browserHeight);
+          var speed = 50 + Math.random() * 40;
+          var degree = 360*Math.random();
+
+          // create our snowflake object
+
+          var snowflakeObject = new Snowflake(snowflakeClone, speed, initialXPos, initialYPos, degree);
+
+          snowflakes.push(snowflakeObject);
+    }
+
+    snowflakeContainer.removeChild(originalSnowflake);
+
+    moveSnowflakes();
+
+  }
+
+  // responsible for moving each snowflake by calling its update function
+  function moveSnowflakes() {
+
+    if(enableAnimations) {
+           for(var i=0; i<snowflakes.length; i++){
+
+            var snowflake = snowflakes[i];
+            snowflake.update();
+
+           }}
+
+           // reset the position of all the snowflakes to a new value
+
+           if(resetPosition){
+            browserWidth= document.documentElement.clientWidth;
+            browserHeight= document.documentElement.clientHeight;
+
+            for (var i = 0; i < snowflakes.length; i++) {
+            var snowflake = snowflakes[i];
+
+             snowflake.xPos = getPosition(50, browserWidth);
+             snowflake.yPos = getPosition(50, browserHeight);
+            }
+
+         resetPosition = false;
+           }
+
+    requestAnimationFrame(moveSnowflakes);
+  }
+
+    function getPosition(offset, size) {
+
+    return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+  }
+
+    function setResetFlag(e) {
+    resetPosition = true;
+  }
+
+// END of the background stuff --------------------------------------
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+
+</body>
+</html>

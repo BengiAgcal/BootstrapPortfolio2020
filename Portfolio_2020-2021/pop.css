@@ -1,0 +1,27 @@
+.blk {background-color: #230619;}
+
+#team {color:#0b8e7d;}
+
+.s a {color: white;}
+
+#header {
+	background-image:url(sea3.jpg);
+  padding: 10px; background-size: cover; 
+  background-attachment: fixed; background-position: center top;
+  text-align: left;
+
+}
+.he {color: #230619;}
+
+.row {margin-bottom: 20px;}
+
+#header h1, p  {color: white;}
+
+.in img{ width: 80%; box-sizing: border-box; }
+.in p {color: black;}
+.ann {-webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); margin-bottom: 10px;}
+ #footer p {color: white;}
+#footer {text-align: center; padding:10px;margin-bottom: -50px ; 
+ }
+
